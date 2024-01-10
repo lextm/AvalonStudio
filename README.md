@@ -39,6 +39,6 @@ dotnet build
 ### 4. Run locally built binaries
 
 ```sh
-cd bin/Debug/net5.0
+cd bin/Debug/net8.0
 ./AvalonStudio
 ```

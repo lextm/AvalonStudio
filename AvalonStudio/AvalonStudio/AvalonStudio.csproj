@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Product>AvalonStudio</Product>
     <OutputType>WinExe</OutputType>
-    <TargetFrameworks>net5.0</TargetFrameworks>
+    <TargetFrameworks>net8.0</TargetFrameworks>
     <TieredCompilations>True</TieredCompilations>
     <TargetLatestRuntimePatch>true</TargetLatestRuntimePatch>
     <PreserveCompilationContext>true</PreserveCompilationContext>

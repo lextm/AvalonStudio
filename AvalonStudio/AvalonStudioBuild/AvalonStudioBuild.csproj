@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Product>AvalonBuild</Product>
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>net5.0</TargetFrameworks>
+    <TargetFrameworks>net8.0</TargetFrameworks>
     <AssemblyName>avalon</AssemblyName>
     <TieredCompilation>True</TieredCompilation>
     <PreserveCompilationContext>true</PreserveCompilationContext>

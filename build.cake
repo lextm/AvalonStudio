@@ -164,7 +164,7 @@ void RunCoreTest(string dir, bool net461Only)
 {
     Information("Running tests from " + dir);
     DotNetCoreRestore(dir);
-    var frameworks = new List<string>(){"net5.0"};
+    var frameworks = new List<string>(){"net8.0"};
     foreach(var fw in frameworks)
     {
         if(fw != "net461" && net461Only)
