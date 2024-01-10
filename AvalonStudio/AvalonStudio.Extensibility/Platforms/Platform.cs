@@ -234,7 +234,7 @@ namespace AvalonStudio.Platforms
                 switch (PlatformIdentifier)
                 {
                     case PlatformID.Win32NT:
-                        osdir = "win7-x64";
+                        osdir = "win-x64";
                         break;
 
                     case PlatformID.Unix:

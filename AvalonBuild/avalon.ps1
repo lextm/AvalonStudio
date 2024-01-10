@@ -87,7 +87,7 @@ if (!$PSScriptRoot) {
 
 $TOOLS_DIR = Join-Path $PSScriptRoot ".avalon"
 $NUGET_EXE = Join-Path $TOOLS_DIR "nuget.exe"
-$AVALON_EXE = Join-Path $TOOLS_DIR "VitalElement.AvalonBuild.win7-x64/content/avalon.exe"
+$AVALON_EXE = Join-Path $TOOLS_DIR "VitalElement.AvalonBuild.win-x64/content/avalon.exe"
 $NUGET_URL = "https://dist.nuget.org/win-x86-commandline/v4.0.0-rc4/nuget.exe"
 $PACKAGES_CONFIG = Join-Path $TOOLS_DIR "packages.config"
 $PACKAGES_CONFIG_MD5 = Join-Path $TOOLS_DIR "packages.config.md5sum"

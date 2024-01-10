@@ -116,7 +116,7 @@ Information("IsNuGetRelease: " + isNuGetRelease);
 
 var avalonBuildRIDs = new List<string>
 {
-    "win7-x64"
+    "win-x64"
 };
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -202,7 +202,7 @@ Task("Publish-NetCore")
                 OutputDirectory = outputDir.FullPath
             });
 
-            /*if (IsRunningOnWindows() && (runtime == "win7-x86" || runtime == "win7-x64"))
+            /*if (IsRunningOnWindows() && (runtime == "win-x86" || runtime == "win-x64"))
             {
                 Information("Patching executable subsystem for: {0}, runtime: {1}", project.Name, runtime);
                 var targetExe = outputDir.CombineWithFilePath(project.Name + ".exe");
@@ -225,13 +225,13 @@ Task("Copy-Redist-Files-NetCore")
         foreach(var runtime in project.Runtimes)
         {
             var outputDir = zipRootDir.Combine(project.Name + "-" + runtime);
-            /*if (IsRunningOnWindows() && runtime == "win7-x86")
+            /*if (IsRunningOnWindows() && runtime == "win-x86")
             {
                 Information("Copying redist files for: {0}, runtime: {1}", project.Name, runtime);
                 CopyFileToDirectory(msvcp140_x86, outputDir);
                 CopyFileToDirectory(vcruntime140_x86, outputDir);
             }
-            if (IsRunningOnWindows() && runtime == "win7-x64")
+            if (IsRunningOnWindows() && runtime == "win-x64")
             {
                 Information("Copying redist files for: {0}, runtime: {1}", project.Name, runtime);
                 CopyFileToDirectory(msvcp140_x64, outputDir);
